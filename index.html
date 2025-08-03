@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Blog - A Web Personal Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="navbar">
+            <div class="logo">Your Name</div>
+            <nav class="menu">
+                <a href="#" class="menu-item">Blog</a>
+                <a href="#" class="menu-item">Projects</a>
+                <a href="#" class="menu-item">About</a>
+                <a href="#" class="menu-item">Newsletter</a>
+                <button class="toggle-mode" id="toggleMode">
+                    <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+        <div class="container">
+            <h1 class="main-title">THE BLOG</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="blog">
+        <!-- Recent Blog Posts Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-heading">Recent blog posts</h2>
+                <div class="content-grid">
+                    <!-- Featured Blog Post -->
+                    <article class="blog-card featured">
+                        <div class="blog-image">
+                            <img src="images/blog-post-1.png" alt="UX review presentations">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="author">Olivia Rhye • 1 Jan 2023</span>
+                                <div class="blog-title-wrapper">
+                                    <h3 class="blog-title">UX review presentations</h3>
+                                    <div class="icon-wrap">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="blog-excerpt">How do you create compelling presentations that wow your colleagues and impress your managers?</p>
+                            </div>
+                            <div class="categories">
+                                <span class="badge badge-purple">Design</span>
+                                <span class="badge badge-blue">Research</span>
+                                <span class="badge badge-pink">Presentation</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Side Blog Posts -->
+                    <div class="side-posts">
+                        <article class="blog-card side">
+                            <div class="blog-image">
+                                <img src="images/blog-post-2.png" alt="Migrating to Linear 101">
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span class="author">Phoenix Baker • 1 Jan 2023</span>
+                                    <h3 class="blog-title">Migrating to Linear 101</h3>
+                                    <p class="blog-excerpt">Linear helps streamline software projects, sprints, tasks, and bug tracking. Here's how to get...</p>
+                                </div>
+                                <div class="categories">
+                                    <span class="badge badge-cyan">Design</span>
+                                    <span class="badge badge-pink">Research</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="blog-card side">
+                            <div class="blog-image">
+                                <img src="images/blog-post-3.png" alt="Building your API Stack">
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span class="author">Lana Steiner • 1 Jan 2023</span>
+                                    <h3 class="blog-title">Building your API Stack</h3>
+                                    <p class="blog-excerpt">The rise of RESTful APIs has been met by a rise in tools for creating, testing, and manag...</p>
+                                </div>
+                                <div class="categories">
+                                    <span class="badge badge-green">Design</span>
+                                    <span class="badge badge-pink">Research</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grid System Section -->
+        <section class="section">
+            <div class="container">
+                <div class="content-grid">
+                    <article class="blog-card horizontal">
+                        <div class="blog-image">
+                            <img src="images/blog-post-4-464667.png" alt="Grid system for better Design User Interface">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="author">Olivia Rhye • 1 Jan 2023</span>
+                                <div class="blog-title-wrapper">
+                                    <h3 class="blog-title">Grid system for better Design User Interface</h3>
+                                    <div class="icon-wrap">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="blog-excerpt">A grid system is a design tool used to arrange content on a webpage. It is a series of vertical and horizontal lines that create a matrix of intersecting points, which can be used to align and organize page elements. Grid systems are used to create a consistent look and feel across a website, and can help to make the layout more visually appealing and easier to navigate.</p>
+                            </div>
+                            <div class="categories">
+                                <span class="badge badge-purple">Design</span>
+                                <span class="badge badge-pink">Interface</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Blog Posts Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-heading">All blog posts</h2>
+                <div class="posts-grid">
+                    <!-- Row 1 -->
+                    <div class="posts-row">
+                        <article class="blog-card all-posts">
+                            <div class="blog-image">
+                                <img src="images/blog-post-5.png" alt="Bill Walsh leadership lessons">
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span class="author">Alec Whitten • 1 Jan 2023</span>
+                                    <div class="blog-title-wrapper">
+                                        <h3 class="blog-title">Bill Walsh leadership lessons</h3>
+                                        <div class="icon-wrap">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="blog-excerpt">Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?</p>
+                                </div>
+                                <div class="categories">
+                                    <span class="badge badge-purple">Leadership</span>
+                                    <span class="badge badge-gray">Management</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="blog-card all-posts">
+                            <div class="blog-image">
+                                <img src="images/blog-post-6.png" alt="PM mental models">
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span class="author">Demi WIlkinson • 1 Jan 2023</span>
+                                    <div class="blog-title-wrapper">
+                                        <h3 class="blog-title">PM mental models</h3>
+                                        <div class="icon-wrap">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="blog-excerpt">Mental models are simple expressions of complex processes or relationships.</p>
+                                </div>
+                                <div class="categories">
+                                    <span class="badge badge-cyan">Product</span>
+                                    <span class="badge badge-blue">Research</span>
+                                    <span class="badge badge-orange">Frameworks</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="blog-card all-posts">
+                            <div class="blog-image">
+                                <img src="images/blog-post-7.png" alt="What is Wireframing?">
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span class="author">Candice Wu • 1 Jan 2023</span>
+                                    <div class="blog-title-wrapper">
+                                        <h3 class="blog-title">What is Wireframing?</h3>
+                                        <div class="icon-wrap">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="blog-excerpt">Introduction to Wireframing and its Principles. Learn from the best in the industry.</p>
+                                </div>
+                                <div class="categories">
+                                    <span class="badge badge-purple">Design</span>
+                                    <span class="badge badge-blue">Research</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="posts-row">
+                        <article class="blog-card all-posts">
+                            <div class="blog-image">
+                                <img src="images/blog-post-8.png" alt="How collaboration makes us better designers">
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span class="author">Natali Craig • 1 Jan 2023</span>
+                                    <div class="blog-title-wrapper">
+                                        <h3 class="blog-title">How collaboration makes us better designers</h3>
+                                        <div class="icon-wrap">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="blog-excerpt">Collaboration can make our teams stronger, and our individual designs better.</p>
+                                </div>
+                                <div class="categories">
+                                    <span class="badge badge-purple">Design</span>
+                                    <span class="badge badge-blue">Research</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="blog-card all-posts">
+                            <div class="blog-image">
+                                <img src="images/blog-post-9.png" alt="Our top 10 Javascript frameworks to use">
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span class="author">Drew Cano • 1 Jan 2023</span>
+                                    <div class="blog-title-wrapper">
+                                        <h3 class="blog-title">Our top 10 Javascript frameworks to use</h3>
+                                        <div class="icon-wrap">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="blog-excerpt">JavaScript frameworks make development easy with extensive features and functionalities.</p>
+                                </div>
+                                <div class="categories">
+                                    <span class="badge badge-green">Software Development</span>
+                                    <span class="badge badge-pink">Tools</span>
+                                    <span class="badge badge-red">SaaS</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="blog-card all-posts">
+                            <div class="blog-image">
+                                <img src="images/blog-post-10.png" alt="Podcast: Creating a better CX Community">
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span class="author">Orlando Diggs • 1 Jan 2023</span>
+                                    <div class="blog-title-wrapper">
+                                        <h3 class="blog-title">Podcast: Creating a better CX Community</h3>
+                                        <div class="icon-wrap">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="blog-excerpt">Starting a community doesn't need to be complicated, but how do you get started?</p>
+                                </div>
+                                <div class="categories">
+                                    <span class="badge badge-purple">Podcasts</span>
+                                    <span class="badge badge-gray">Customer Success</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <button class="pagination-btn">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M15.8333 10H4.16666M4.16666 10L10 15.8333M4.16666 10L10 4.16667" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Previous</span>
+                    </button>
+                    <div class="pagination-numbers">
+                        <button class="pagination-number active">1</button>
+                        <button class="pagination-number">2</button>
+                        <button class="pagination-number">3</button>
+                        <button class="pagination-number">...</button>
+                        <button class="pagination-number">8</button>
+                        <button class="pagination-number">9</button>
+                        <button class="pagination-number">10</button>
+                    </div>
+                    <button class="pagination-btn">
+                        <span>Next</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4.16666 10H15.8333M15.8333 10L10 4.16667M15.8333 10L10 15.8333" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <span class="copyright">© 2023</span>
+                <nav class="footer-menu">
+                    <a href="#" class="footer-link">Twitter</a>
+                    <a href="#" class="footer-link">LinkedIn</a>
+                    <a href="#" class="footer-link">Email</a>
+                    <a href="#" class="footer-link">RSS feed</a>
+                    <a href="#" class="footer-link">Add to Feedly</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
